@@ -1,0 +1,183 @@
+﻿#menu-sor {
+  width: 99%;
+  margin: 0px 0px 0px 0px;
+  padding: 6px 6px 4px 6px;
+  height: 30px;
+  line-height: 100%;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px #666666;
+  background: #FF0000;
+  border: groove 3px #FFFFFF;
+  position:relative;
+  z-index:999;
+}
+#menu-sor li {
+  margin: 0px 0px 6px 0px;
+  padding: 0px 6px 0px 6px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu-sor a {
+  font-weight: bold;
+  font-family: 'times new roman';
+  font-style: normal;
+  font-size: 16px;
+  color: #FFFDFD;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px 6px 20px;
+  margin: 0;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  
+ 
+  text-shadow: 2px 2px 3px #000000;
+}
+#menu-sor li ul li a {
+  margin: 0;
+}
+#menu-sor .active a, #menu-sor li:hover > a {
+  background: #D43E03;
+  background: linear-gradient(top,  #FF0000,  #D9D9D9);
+  
+  color: #444444;
+ 
+ 
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-sor ul li:hover a, #menu-sor li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  box-shadow: none;
+ 
+  
+}
+#menu-sor ul a:hover {
+  background: #D43E03 !important;
+  background: linear-gradient(top,  #04ACEC,  #0186BA);
+ 
+  color: #FFFFFF ;
+  border-radius: 0;
+ 
+ 
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-sor li:hover > ul {
+  display: block;
+}
+#menu-sor ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: solid 1px #B4B4B4;
+  border-radius: 10px;
+  
+
+ 
+  box-shadow: 2px 2px 3px #222222;
+}
+#menu-sor ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-sor ul a {
+  padding:10px 0px 10px 15px;
+  color:#424242 ;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-sor ul li:first-child > a {
+  border-top-left-radius: 10px;
+ 
+
+  border-top-right-radius: 10px;
+ 
+  
+}
+#menu-sor ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+
+  border-bottom-right-radius: 10px;
+ 
+}
+#menu-sor:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-sor {
+  display: inline-block;
+}
+  html[xmlns] #menu-sor {
+  display: block;
+}
+* html #menu-sor {
+  height: 1%;
+}
+
+  body {
+    background-image: url(bg0.jpg);
+    background-position: center ;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-attachment: fixed;
+  }
+ 
+ #bg1{
+		background-image:url('bg1.png');
+		position:absolute;
+		bottom:30%;
+		width:482px;
+		height:255px;
+		background-size:482px 255px;
+		margin-left:-100px;
+		left:100px;
+		animation-name:bg1;
+		animation-duration:3s;
+		animation-timing-function:ease-in-out;
+		animation-iteration-count:infinite;
+		animation-direction:alternate;
+		}
+@keyframes bg1{
+		from{left:100px}
+		to{left:50%}
+	
+}
+#bg2 {
+		right:100px;
+		transform: scaleX(-1);
+		bottom:30%px;
+		background-image:url('bg2.png');
+		position:absolute;
+		bottom:150px;
+		width:482px;
+		height:255px;
+		background-size:482px 255px;
+		animation-name:bg2;
+		animation-duration:3s;
+		animation-timing-function:ease-in-out;
+		margin-right:-100px;
+		animation-iteration-count:infinite;
+		animation-direction:alternate;
+		}
+@keyframes bg2{
+		from{right:100px}
+to{right:50%}}
+
